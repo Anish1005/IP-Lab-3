@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portfolio</title>
+    <link rel="stylesheet" href="lab3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="p-3 bg-primary text-light">
+        <h1 class="text-center">
+            <img src="companylogo1.png" alt="Company Logo" class="logo"> Once Technologies
+        </h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#workplace">Workplace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-5">
+        <!-- About Us Section -->
+        <section id="about" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3">
+                    <img src="html_image_1.jpg" alt="Company Image" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">Welcome to our company portfolio!</p>
+                    <p>Our company specializes in crafting bespoke software solutions tailored for modern business portfolios. With a dedicated focus on innovation and efficiency, Once Technologies empowers organizations to streamline operations, enhance productivity, and achieve strategic goals seamlessly.</p>
+                    <p>Our team of seasoned developers and tech enthusiasts are committed to delivering cutting-edge applications that not only meet but exceed industry standards. Whether it's scalable enterprise software, intuitive mobile applications, or robust data analytics tools, Once Technologies is your trusted partner in driving digital transformation.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <audio controls class="w-50">
+                    <source src="intro_audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="text-center mt-4">
+                <video controls autoplay loop muted class="w-75 rounded shadow">
+                    <source src="officevideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Our Services</h2>
+            <ul>
+                <li>Custom Software Development</li>
+                <li>Software Consulting and Advisory</li>
+                <li>Software Maintenance and Support</li>
+            </ul>
+            <p>Once Technologies offers custom software development, consulting, and maintenance services to help businesses optimize operations, enhance customer experiences, and innovate effectively.</p>
+        </section>
+
+        <!-- Workplace Section with Carousel -->
+        <section id="workplace" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Workplace</h2>
+            <div id="workplaceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#workplaceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#workplaceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#workplaceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="workplace1.jpeg" class="d-block w-100 workplace-img" alt="Workplace 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="workplace2.jpeg" class="d-block w-100 workplace-img" alt="Workplace 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="workplace3.jpg" class="d-block w-100 workplace-img" alt="Workplace 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#workplaceCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#workplaceCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Contact Us</h2>
+            <p>If you have any inquiries or need further information, feel free to reach out to us:</p>
+            <address>
+                <p>Phone: 1234567890</p>
+                <p>Address: 123 Tech Avenue, Mumbai</p>
+            </address>
+        </section>
+    </div>
+
+    <footer class="bg-primary text-light text-center py-3">
+        <p>&copy; 2024 Once Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
